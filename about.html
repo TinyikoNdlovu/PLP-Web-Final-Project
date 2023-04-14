@@ -80,7 +80,7 @@
     <div class="container" id="about">
         <h3>PRODUCT</h3>
         <hr>
-        <p>It's hard to stay up to date with the ever-growing, 
+        <p class="cutoff-text">It's hard to stay up to date with the ever-growing, 
             forever-changing tech space. But luckily for you, that's
             where we come in. We're constantly testing new products,
             researching recent trends in the tech space, and updating
@@ -101,6 +101,7 @@
             keyboards and mouse to tech products for parents, students 
             and office, here are the coolest gadgets available right now.
         </p>
+        <input class="expand-btn" type="checkbox">
         <hr>
         <div class="row" style="margin-top: 50px;">
             <div class="col-md-5 py-3 py-md-0">
@@ -109,7 +110,7 @@
                 </div>
             </div>
             <div class="col-md-5 py-3 py-md-0">
-                <p>We live in a world of incredible innovation, smart devices 
+                <p class="cutoff-text">We live in a world of incredible innovation, smart devices 
                     and genius tools that can be carried on you at all times. 
                     With all of these advances in technology come some really 
                     cool gadgets.
@@ -135,7 +136,7 @@
                     must-have tech gifts for 2023, from games consoles and wearable 
                     tech to smartphone, ensuring that whoever you buy this gift for, 
                     they have the latest, coolest gear.</p>
-                <button>Read More...</button>
+                <input class="expand-btn" type="checkbox">
             </div>
         </div>
     </div>
@@ -171,8 +172,8 @@
     <!-- News Letter -->
     <div class="container" id="newsletter">
       <h3 class="text-center">Subscribe To The Tech Shop For Latest upload</h3>
-      <form method="post" action="" class="input text-center" name="subscribeForm" onsubmit="suscribevalidation()">
-        <input type="text" placeholder="Enter Your Email..">
+      <form method="post" action="#" class="input text-center" name="subscribeForm" onsubmit="suscribevalidation()">
+        <input type="email" id="email" placeholder="Enter Your Email..">
         <button id="subscribe">Subscribe</button>
       </form>
     </div>

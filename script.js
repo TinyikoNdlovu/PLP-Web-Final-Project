@@ -66,11 +66,11 @@ function signUpValidation(){
 }
 
 function resetvalidation(){
-    let email = document.forms.forgotForm.email.value;
+    let email = document.getElementById('email').value;
     let regEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)'$/;
 
     if (email == "" || !regEmail.test(email)) {
-        alert("please enter yor Email properly.");
+        alert("please enter your Email properly.");
         email.focus();
         return false;
     }else {
@@ -79,24 +79,24 @@ function resetvalidation(){
 }
 
 function searchvalidation(){
-    let search = document.forms.searchForm.email.value;
+    let search = document.getElementById('search').value;
     let regName = /\d+/g;
 
     if (search == "" || !regName.test(search)) {
-        alert("please enter yor Email properly.");
+        alert("please enter product name properly.");
         search.focus();
         return false;
     }else {
-        alert("Successfully subscribed.");
+        alert("See products available for your search");
     }
 }
 
 function suscribevalidation(){
-    let email = document.forms.subscribeForm.email.value;
+    let email = document.getElementById('email').value;
     let regEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)'$/;
 
     if (email == "" || !regEmail.test(email)) {
-        alert("please enter yor Email properly.");
+        alert("please enter your Email properly.");
         email.focus();
         return false;
     }else {
