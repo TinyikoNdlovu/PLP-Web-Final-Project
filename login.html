@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Bootstrap Link -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     
+      <!-- ===== FontAwesome ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS Style Link -->
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Electronic Shop</title>
+</head>
+<body>
+
+    <!-- Top Navbar -->
+    <div class="top-navbar">
+        <p>Welcome to Tech Shop</p>
+        <div class="icons">
+            <a href="login.html"><img src="./images/register.png" alt="" width="18px">Login</a>
+            <a href="signup.html"><img src="./images/register.png" alt="" width="18px">Signup</a>
+        </div>
+    </div>
+    <!-- End of Top Navbar -->
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" id="logo"><span id="span1">G</span>adjets &<span>Tech</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><img src="./images/menu.png" alt="" width="30px"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Product</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Category
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(67, 0, 86);">
+                  <li><a class="dropdown-item" href="#">Tablet</a></li>
+                  <li><a class="dropdown-item" href="#">Smart Phone</a></li>
+                  <li><a class="dropdown-item" href="#">Laptop</a></li>
+                  <li><a class="dropdown-item" href="#">Headphones</a></li>
+                  <li><a class="dropdown-item" href="#">PC Monitor</a></li>
+                  <li><a class="dropdown-item" href="#">SSD Drive</a></li>
+                  <li><a class="dropdown-item" href="#">Keyboard</a></li>
+                  <li><a class="dropdown-item" href="#">Mouse</a></li>
+                  <li><a class="dropdown-item" href="#">PC Case</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" id="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- End of Navbar -->
+
+    <!-- Login -->
+    <div class="container" id="login">
+        <div class="row">
+            <div class="col-md-5 py-3 py-md-0" id="side1">
+                <h3 class="text-center">Welcome Back!</h3>
+            </div>
+            <div class="col-md-7 py-3 py-md-0" id="side2">
+                <h3 class="text-center">Account Login</h3>
+                <p class="text-center">Please Login first to purchase our products</p>
+                <form method="post" action="" class="input2 text-center" name="loginForm" onsubmit="loginvalidation()">
+                    <input type="email" id="email" name="email" placeholder="Email">
+                    <input type="password" id="password" name="password" placeholder="Password">
+                </form>
+                <div class="recover">
+                  <a href="forgotpassword.html">Forgot Password?</a>
+              </div>
+                <p class="text-center" id="btnlogin"><a href="#">Log In</a></p>
+                <div class="member">
+                  Not a member? <a href="./signup.html">
+                      Register Now
+                  </a>
+              </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Login -->
+
+    <!-- News Letter -->
+    <div class="container" id="newsletter">
+      <h3 class="text-center">Subscribe To The Tech Shop For Latest upload</h3>
+      <form method="post" action="" class="input text-center" name="subscribeForm" onsubmit="suscribevalidation()">
+        <input type="text" placeholder="Enter Your Email..">
+        <button id="subscribe">Subscribe</button>
+      </form>
+    </div>
+    <!-- End of News Letter -->
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3>Tech Shop</h3>
+              <p>
+                Midrand <br>
+                Johannesburg <br>
+                South Africa <br>
+              </p>
+              <strong>Phone:</strong> +27764357935 <br>
+              <strong>Email:</strong> gadjetstech@gmail.com <br>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Usefull Links</h4>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Terms of service</a></li>
+                <li><a href="#">Privacy policy</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+              
+              <ul>
+                <li><a href="#">Xbox Series</a></li>
+                <li><a href="#">Computer</a></li>
+                <li><a href="#">Macbook</a></li>
+                <li><a href="#">Tablet</a></li>
+                <li><a href="#">Gaming Gadjet</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Social Networks</h4>
+              <p>Follow us on these social networks for queries, new uploads and other info.</p>
+              
+              <div class="social-links mt-3">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="container py-4">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Tech Shop</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by <a href="#">Tinyiko Ndlovu</a>
+        </div>
+      </div>
+    </footer>
+    <!-- End of Footer -->
+
+    <a href="#" class="arrow"><i><img src="./images/slide-up.png" alt=""></i></a>
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+      import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+      import { getAuth, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyDwPErprtRNVyFwGaTte5P0pkNVGLlfcHk",
+        authDomain: "gadjets-tech-99ad6.firebaseapp.com",
+        databaseURL: "https://gadjets-tech-99ad6-default-rtdb.firebaseio.com",
+        projectId: "gadjets-tech-99ad6",
+        storageBucket: "gadjets-tech-99ad6.appspot.com",
+        messagingSenderId: "129856862720",
+        appId: "1:129856862720:web:b48a0822050d54e32c36e5"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const database = getDatabase(app);
+      const auth = getAuth();
+
+      btnlogin.addEventListener('click',(e) =>{
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+
+        signInWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+          // Signed in 
+          const user = userCredential.user;
+
+          const dt = new Date();
+          update(ref(database, 'users/' + user.uid),{
+            last_login: dt,
+          })
+
+          alert('User logged in successfully!');
+          window.location.assign('index.html');
+          // ...
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+
+          alert(errorMessage);
+        });
+      });
+
+      const user = auth.currentUser;
+      onAuthStateChanged(auth, (user) => {
+        if (user) {
+          // User is signed in, see docs for a list of available properties
+          // https://firebase.google.com/docs/reference/js/firebase.User
+          const uid = user.uid;
+          // ...
+        } else {
+          // User is signed out
+          // ...
+        }
+      });
+
+      logout.addEventListener('click',(e) =>{
+        signOut(auth).then(() => {
+          // Sign-out successful.
+          alert('User logged out successfully!');
+          window.location.assign('index.html');
+        }).catch((error) => {
+          // An error happened.
+          const errorCode = error.code;
+          const errorMessage = error.message;
+
+          alert(errorMessage);
+        });
+      });
+
+    </script>
+    
+</body>
+</html>
+
