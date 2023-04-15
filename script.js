@@ -79,17 +79,30 @@ function resetvalidation(){
 }
 
 function searchvalidation(){
-    let search = document.getElementById('search').value;
+    let searchBar = document.getElementById('searchBar').value;
     let regName = /\d+/g;
 
-    if (search == "" || !regName.test(search)) {
+    if (searchBar == "" || !regName.test(searchBar)) {
         alert("please enter product name properly.");
-        search.focus();
+        searchBar.focus();
         return false;
     }else {
         alert("See products available for your search");
     }
 }
+
+// const product = document.querySelectorAll(".card");
+// const categories = [...new Set(product.map((item) => {return item}))]
+
+
+// document.getElementById('searchBar').addEventListener('keyup', (e) => {
+//     const searchData = e.target.value.toLowerCase();
+//     const filterData = categories.filter((item) => {
+//         return(
+//             item.title.toLocaleLowerCase().includes(searchData)
+//         )
+//     })
+// })
 
 function suscribevalidation(){
     let email = document.getElementById('email').value;

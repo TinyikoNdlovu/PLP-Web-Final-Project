@@ -10,6 +10,7 @@
      
       <!-- ===== FontAwesome ===== -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/3d5c82d57b.js" crossorigin="anonymous"></script>
 
     <!-- CSS Style Link -->
     <link rel="stylesheet" href="./style.css">
@@ -67,10 +68,11 @@
                 <a class="nav-link" href="contact.html">Contact</a>
               </li>
             </ul>
-            <form method="post" action="#" class="d-flex" id="search" name="searchForm" onsubmit="searchvalidation()">
-              <input class="form-control me-2" type="search" id="search" name="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            <div class="searchbar" id="search" name="searchDiv" onsubmit="searchvalidation()">
+              <input class="form-control me-2" type="text" id="searchBar" name="searchBar" placeholder="Search..." onkeyup="search()" aria-label="Search">
+              <i class="fa-solid fa-magnifying-glass glass"></i>
+              <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+            </div>
           </div>
         </div>
       </nav>
@@ -647,7 +649,30 @@
 
     <a href="#" class="arrow"><i><img src="./images/slide-up.png" alt=""></i></a>
 
-    <script src="./script.js"></script>
+    <script src="./script.js">
+      function search(){
+    let filter = document.getElementById('searchBar').value.toUpperCase();
+
+    let item = document.querySelectorAll('.card');
+
+    let pName = document.getElementsByTagName('h3');
+
+    for(var i = 0; i <= pName.length; i++){
+        let a = item[i].getElementsByTagName('h3')[0];
+
+        let value = a.innerHTML || a.innerText || a.textContent;
+
+        if(value.toUpperCase().indexOf(filter) > -1) {
+            item[i].style.display = "";
+        }
+        else {
+            item[i].style.display = "none";
+        }
+
+    }
+
+}
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
 </body>

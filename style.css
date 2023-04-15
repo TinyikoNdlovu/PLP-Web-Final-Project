@@ -110,11 +110,26 @@
     background-color: rebeccapurple;
     color: black;
 }
-#search{
-    border-radius: 50px;
+.searchbar{
+    width: 100%;
+    background-color: #eee;
+    border-radius: 3px;
     border: none;
+    padding: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
-#search button{
+.searchbar input{
+    border: none;
+    outline: none;
+    background: none;   
+}
+.searchbar .glass:hover{
+    color: mediumpurple;
+    cursor: pointer;
+}
+.searchbar button{
     border-radius: 50px;
     color: white;
     border: 1px solid rebeccapurple;
